@@ -14,11 +14,11 @@ const PasswordGenerator = () => {
                         {/* input bar */}
                         <input
                             type="text"
-                            className='w-full sm:w-3/4 mb-2 sm:mr-2 px-2 py-3 bg-transparent bg-slate-500 rounded-md text-gray-100 font-medium text-sm outline-none'
+                            className='w-full sm:w-3/4 mb-2 sm:mr-2 px-2 py-3 bg-transparent bg-sky-800 rounded-md text-gray-200 font-medium text-sm outline-none'
                         />
 
                         {/* copy button */}
-                        <button className='w-3/5 sm:w-1/4 mx-auto py-0.5 bg-cyan-600 text-gray-100 hover:bg-cyan-800 rounded-md hover:scale-105 transition duration-700 ease-in-out'>
+                        <button className='w-1/2 sm:w-1/4 mx-auto py-0.5 px-1 bg-cyan-600 text-gray-100 hover:bg-cyan-800 rounded-md hover:scale-105 transition duration-700 ease-in-out'>
                             Copy
                             <FaCopy className='inline-block pl-1' />
                         </button>
