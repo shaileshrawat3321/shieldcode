@@ -1,4 +1,7 @@
+import { ImLoop2 } from 'react-icons/im'
+import { FaCopy } from 'react-icons/fa'
 const PasswordGenerator = () => {
+
     return (
         <>
             <main className='bg-slate-900 text-gray-200 min-h-screen flex flex-col justify-center items-center'>
@@ -11,12 +14,13 @@ const PasswordGenerator = () => {
                         {/* input bar */}
                         <input
                             type="text"
-                            className='w-full sm:w-3/4 mb-2 sm:mr-2 px-2 py-3 bg-transparent bg-gray-500 rounded-md text-gray-100 font-medium text-sm outline-none'
+                            className='w-full sm:w-3/4 mb-2 sm:mr-2 px-2 py-3 bg-transparent bg-slate-500 rounded-md text-gray-100 font-medium text-sm outline-none'
                         />
 
                         {/* copy button */}
-                        <button className='w-2/5 sm:w-1/4 mx-auto py-0.5 bg-cyan-600 text-gray-100 hover:bg-cyan-800 rounded-md hover:scale-105 transition duration-700 ease-in-out'>
+                        <button className='w-3/5 sm:w-1/4 mx-auto py-0.5 bg-cyan-600 text-gray-100 hover:bg-cyan-800 rounded-md hover:scale-105 transition duration-700 ease-in-out'>
                             Copy
+                            <FaCopy className='inline-block pl-1' />
                         </button>
                     </section>
 
@@ -48,7 +52,27 @@ const PasswordGenerator = () => {
                                 id='number'
                                 className='mr-1'
                             />
-                            <label htmlFor="number">Numbers</label>
+                            <label htmlFor="number" className="sm:text-xl">Numbers</label>
+                        </div>
+
+                        {/* capital letter */}
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="blockLetter"
+                                className="mr-1"
+                            />
+                            <label htmlFor="blockLetter" className="sm:text-xl">Uppercase</label>
+                        </div>
+
+                        {/* small letter */}
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="smallLetter"
+                                className="mr-1"
+                            />
+                            <label htmlFor="smallLetter" className="sm:text-xl">Lowecase</label>
                         </div>
 
                         {/* spl characters */}
@@ -58,7 +82,7 @@ const PasswordGenerator = () => {
                                 id='specialCharacter'
                                 className='mr-1'
                             />
-                            <label htmlFor="specialCharacter">Special Characters</label>
+                            <label htmlFor="specialCharacter" className="sm:text-xl">Special Characters</label>
                         </div>
                     </section>
 
@@ -66,7 +90,9 @@ const PasswordGenerator = () => {
                     <section className="w-full px-3 py-3">
 
                         {/* regenerate button */}
-                        <button className='bg-green-600 text-gray-200 px-2 sm:px-8 py-2 rounded-md hover:bg-green-800 hover:text-gray-100 hover:scale-110 transition duration-700 ease-in-out'>Regenerate </button>
+                        <button className='px-2 sm:px-8 py-2 rounded-md bg-green-600 text-gray-200 hover:bg-green-800 hover:text-gray-100 hover:scale-110 transition duration-700 ease-in-out'>Regenerate
+                            <ImLoop2 className='inline-block pl-1' />
+                        </button>
                     </section>
                 </section>
             </main>
