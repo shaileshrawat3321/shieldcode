@@ -56,9 +56,9 @@ const PasswordGenerator = () => {
     // console.log(numberAllowed)
     return (
         <>
-            <main className='bg-primaryBg text-primartText min-h-screen flex flex-col justify-center items-center'>
+            <main className='bg-extraText text-primartText min-h-screen flex flex-col justify-center items-center'>
 
-                <section className="w-3/4 sm:w-2/3 md:w-1/2 px-2 text-center mx-auto flex flex-col justify-center gap-2 border-2 border-secondaryBg rounded-lg">
+                <section className="w-3/4 sm:w-2/3 md:w-1/2 px-2 text-center mx-auto flex flex-col justify-center gap-2 border-2 border-secondaryBg rounded-lg bg-extraBg">
 
                     {/* 1 viw and copy section*/}
                     <section className="w-full px-3 py-3 mb-1 flex flex-col sm:flex-row md:justify-between truncate">
@@ -87,7 +87,7 @@ const PasswordGenerator = () => {
                     </section>
 
                     {/* check box heading */}
-                    <h1 className="text-sm sm:text-2xl sm:font-bold mb-1 uppercase underline underline-offset-4 text-gray-400">
+                    <h1 className="text-sm sm:text-2xl sm:font-bold mb-1 uppercase underline underline-offset-4 text-secondaryText">
                         Customize your password
                     </h1>
 
@@ -102,13 +102,13 @@ const PasswordGenerator = () => {
                                 type="range"
                                 min={6}
                                 max={20}
-                                className='cursor-pointer'
+                                className='cursor-pointer '
                                 value={length}
                                 onChange={(e) => setLength(e.target.value)}
 
                             />
                         </div>
-                        <label className='mb-1'>
+                        <label className='mb-1 text-secondaryText'>
                             Length: {length}
                         </label>
 
